@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="">
+    <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="maven added">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DBConnection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +206,14 @@
       <option name="presentableId" value="Default" />
       <updated>1456294127490</updated>
     </task>
+    <task id="LOCAL-00001" summary="maven added">
+      <created>1601500911220</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601500911220</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -217,6 +224,10 @@
       <collection />
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="maven added" />
+    <option name="LAST_COMMIT_MESSAGE" value="maven added" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1601415097828">
       <screen x="0" y="0" width="1600" height="860" />
@@ -226,6 +237,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="523" y="120" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1600.860@0.0.1600.860" timestamp="1601490065452" />
+    <state x="469" y="25" key="CommitChangelistDialog2" timestamp="1601501163523">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="469" y="25" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1601501163523" />
     <state width="1557" height="275" key="GridCell.Tab.0.bottom" timestamp="1601500381863">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
