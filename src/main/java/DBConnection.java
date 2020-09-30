@@ -19,7 +19,7 @@ public class DBConnection
             try {
                 connection = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/" + dbName +
-                    "?user=" + dbUser + "&password=" + dbPass);
+                    "?user=" + dbUser + "&password=" + dbPass + "&serverTimezone=UTC");
                 connection.createStatement().execute("DROP TABLE IF EXISTS voter_count");
                 connection.createStatement().execute("CREATE TABLE voter_count(" +
                         "id INT NOT NULL AUTO_INCREMENT, " +
@@ -38,7 +38,7 @@ public class DBConnection
 
         sql = "INSERT INTO voter_count(name, birthDate, 'count') " +
                 "VALUES" + values +
-                "ON DUPLICATE KEY UPDATE 'count'='count' +1";
+                " ON DUPLICATE KEY UPDATE 'count'='count' +1";
 
         DBConnection.getConnection().createStatement().execute(sql);
 
@@ -59,7 +59,9 @@ public class DBConnection
     {
         birthDay = birthDay.replace('.','-');
 
-        values += values.length() == 0 ? "" : "," + "('" + name + "', '" + birthDay + "', 1)";
+
+        values += values.length() == 0 ? "" : ",";
+        values += "('" + name + "', '" + birthDay + "', 1)";
 
 
 

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="" />
+    <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DBConnection.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,10 +31,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1hq25F9TQvkGLZ7AsCGM20o4r3x" />
@@ -218,30 +222,61 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1601415097828" />
-    <state width="1557" height="190" key="GridCell.Tab.0.bottom" timestamp="1601424164484">
+    <state x="523" y="120" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1601490065452">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="190" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601424164484" />
-    <state width="1557" height="190" key="GridCell.Tab.0.center" timestamp="1601424164484">
+    <state x="523" y="120" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1600.860@0.0.1600.860" timestamp="1601490065452" />
+    <state width="1557" height="275" key="GridCell.Tab.0.bottom" timestamp="1601500381863">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="190" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1601424164484" />
-    <state width="1557" height="190" key="GridCell.Tab.0.left" timestamp="1601424164484">
+    <state width="1557" height="275" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601500381863" />
+    <state width="1557" height="275" key="GridCell.Tab.0.center" timestamp="1601500381862">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="190" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1601424164484" />
-    <state width="1557" height="190" key="GridCell.Tab.0.right" timestamp="1601424164484">
+    <state width="1557" height="275" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1601500381862" />
+    <state width="1557" height="275" key="GridCell.Tab.0.left" timestamp="1601500381862">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="190" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1601424164484" />
+    <state width="1557" height="275" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1601500381862" />
+    <state width="1557" height="275" key="GridCell.Tab.0.right" timestamp="1601500381862">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="275" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1601500381862" />
+    <state width="1557" height="275" key="GridCell.Tab.1.bottom" timestamp="1601500381863">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="275" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601500381863" />
+    <state width="1557" height="275" key="GridCell.Tab.1.center" timestamp="1601500381863">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="275" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1601500381863" />
+    <state width="1557" height="275" key="GridCell.Tab.1.left" timestamp="1601500381863">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="275" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1601500381863" />
+    <state width="1557" height="275" key="GridCell.Tab.1.right" timestamp="1601500381863">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="275" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1601500381863" />
     <state x="280" y="5" key="SettingsEditor" timestamp="1601405629763">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="280" y="5" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1601405629763" />
-    <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1601405592577">
+    <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1601499289708">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="496" y="255" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1601405592577" />
+    <state x="496" y="255" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1601499289708" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DBConnection.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
