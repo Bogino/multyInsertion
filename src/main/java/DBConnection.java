@@ -11,6 +11,8 @@ public class DBConnection
     //private static StringBuilder insertQuery = new StringBuilder();
     private static String sql;
     private static String values = new String();
+    private static StringBuilder stringBuilder = new StringBuilder();
+    private static boolean isBlock = false;
 
     public static Connection getConnection()
     {
@@ -37,8 +39,7 @@ public class DBConnection
     public static void executeMultiInsert() throws SQLException{
 
         sql = "INSERT INTO voter_count(name, birthDate, 'count') " +
-                "VALUES" + values +
-                " ON DUPLICATE KEY UPDATE 'count'='count' +1";
+                "VALUES" + values;
 
         DBConnection.getConnection().createStatement().execute(sql);
 
@@ -59,9 +60,20 @@ public class DBConnection
     {
         birthDay = birthDay.replace('.','-');
 
-
-        values += values.length() == 0 ? "" : ",";
-        values += "('" + name + "', '" + birthDay + "', 1)";
+//
+//        System.out.println(name);
+//        values += values.length() == 0 ? "" : ",";
+//        values += "('" + name + "', '" + birthDay + "', 1)";
+        if (!isBlock){
+            stringBuilder.append("('" + name + "', '" + birthDay + "', 1)");
+        }
+        isBlock = true;
+        stringBuilder.append("," + " ('" + name + "', '" + birthDay + "', 1)");
+        if (stringBuilder.length() > 1000){
+            stringBuilder.append("," + " ('" + name + "', '" + birthDay + "', 1)");
+            values += stringBuilder.toString();
+            stringBuilder = new StringBuilder();
+        }
 
 
 
@@ -83,7 +95,7 @@ public class DBConnection
 
     public static void printVoterCounts() throws SQLException
     {
-        String sql = "SELECT name, birthDate, `count` FROM voter_count WHERE `count` > 1";
+        String sql = "SELECT name, birthDate, count(count) FROM voter_count GROUP BY name";
         ResultSet rs = DBConnection.getConnection().createStatement().executeQuery(sql);
         while(rs.next())
         {
