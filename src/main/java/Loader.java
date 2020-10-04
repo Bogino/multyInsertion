@@ -35,7 +35,7 @@ public class Loader
         long start = System.currentTimeMillis();
 
         DBConnection.executeMultiInsert();
-        System.out.printf("Parsing duration: %d ms",(System.currentTimeMillis() - start));
+        System.out.printf("MultiInsertion duration: %d ms",(System.currentTimeMillis() - start));
 
         DBConnection.printVoterCounts();}
 //        usage = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
