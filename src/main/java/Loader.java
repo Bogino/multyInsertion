@@ -26,7 +26,7 @@ public class Loader
     public static void main(String[] args) throws Exception
     {
 
-        String fileName = "res/data-1572M.xml";
+        String fileName = "res/data-18M.xml";
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         XMLHandler handler = new XMLHandler();
@@ -35,7 +35,7 @@ public class Loader
         long start = System.currentTimeMillis();
 
         DBConnection.executeMultiInsert();
-        System.out.printf("MultiInsertion duration: %d ms",(System.currentTimeMillis() - start));
+        System.out.printf("MultiInsertion duration: %d ms%n",(System.currentTimeMillis() - start));
 
         DBConnection.printVoterCounts();}
 //        usage = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();

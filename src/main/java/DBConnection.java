@@ -67,12 +67,12 @@ public class DBConnection
 
     public static void printVoterCounts() throws SQLException
     {
-        String sql = "SELECT name, birthDate, count(id) FROM voter_count GROUP BY name, birthDate HAVING COUNT(id) > 1;";
+        String sql = "SELECT name, birthDate, count(id) as amount FROM voter_count GROUP BY name, birthDate HAVING COUNT(id) > 1;";
         ResultSet rs = DBConnection.getConnection().createStatement().executeQuery(sql);
         while(rs.next())
         {
             System.out.println("\t" + rs.getString("name") + " (" +
-                    rs.getString("birthDate") + ") - " + rs.getInt("count"));
+                    rs.getString("birthDate") + ") - " + rs.getInt("amount"));
         }
     }
 }
